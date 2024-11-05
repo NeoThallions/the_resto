@@ -1,0 +1,45 @@
+.section-1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+
+    .left-part {
+        background-color: $white-background;
+        padding: 0px 20px;
+
+        @include litle-head;
+
+        h3 {
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        #cooker {
+            border-radius: 100px;
+            transform: scale(0.6);
+            margin: 0;
+        }
+
+        h4,
+        h5 {
+            font-family: $font3;
+        }
+
+        h5 {
+            text-transform: uppercase;
+            font-size: 0.7rem;
+            color: $grey-text;
+            margin-top: 3px;
+        }
+    }
+
+    .right-part {
+
+        background: url(../img/store-01.webp) center/cover;
+
+
+    }
+}

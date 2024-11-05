@@ -1,0 +1,43 @@
+.section-3 {
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 75%;
+        margin: 50px auto;
+
+        .left-part {
+            background-color: $black;
+
+            .left-part-container {
+                border: 1px dashed $white-background;
+                margin: 20px;
+            }
+
+            .litle-header {
+                margin-top: 30px;
+
+                h2 {
+                    font-size: 1.9rem;
+                    height: 25px;
+                }
+
+                h3 {
+                    color: $white-text;
+                    text-transform: uppercase;
+                }
+
+                img {
+                    transform: scale(0.7);
+                    margin: 15px;
+                }
+            }
+        }
+
+        .right-part {
+            background-color: $white-background;
+        }
+    }
+
+
+
+}

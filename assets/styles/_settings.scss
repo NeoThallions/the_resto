@@ -23,6 +23,7 @@ $font3: roboto, arial;
 $white-text: rgb(230, 230, 230);
 $white-background: rgb(238, 238, 238);
 $brown-text: rgb(126, 98, 73);
+$brown-light: rgb(160, 123, 90);
 $black-background: rgb(33, 33, 30);
 $black: rgb(0, 0, 0);
 $grey-text: rgb(183, 183, 185);
@@ -32,6 +33,18 @@ $grey-network: rgb(88, 89, 86);
 
 // *********    déclaration des mixins  **********
 
+@mixin litle-head {
+    padding: 30px;
+
+    h2 {
+        height: 25px;
+    }
+
+    img {
+        transform: scale(0.7);
+        margin: 25px;
+    }
+}
 
 // *********    paramètres généraux     *********
 * {
@@ -64,6 +77,8 @@ a {
 h2 {
     font-family: $font2;
     color: $brown-text;
+    font-weight: 100;
+    font-size: 1.9rem;
 }
 
 p {

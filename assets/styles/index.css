@@ -39,6 +39,8 @@ a {
 h2 {
   font-family: allura, arial;
   color: rgb(126, 98, 73);
+  font-weight: 100;
+  font-size: 1.9rem;
 }
 
 p {
@@ -84,6 +86,7 @@ header nav {
 header nav h2 {
   margin: 0 10px;
   color: rgb(230, 230, 230);
+  font-weight: 600;
 }
 header nav ul {
   display: -webkit-box;
@@ -93,6 +96,10 @@ header nav ul {
 }
 header nav li {
   padding: 5px;
+}
+header nav li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 header nav .ul-nav {
   width: 80%;
@@ -111,20 +118,213 @@ header nav .network {
           justify-content: space-between;
   font-size: 0.8rem;
 }
-header h2 {
+header .header-content {
+  margin-top: 220px;
+}
+header .header-content h2 {
   font-size: 3rem;
   font-weight: 100;
 }
-header h1 {
+header .header-content h1 {
   color: rgb(230, 230, 230);
   text-transform: uppercase;
   letter-spacing: 6px;
   font-size: 4rem;
 }
-header .header-content {
-  margin-top: 230px;
+header .header-content img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 40px 0;
+}
+header .header-content p {
+  font-family: roboto, arial;
+  color: rgb(230, 230, 230);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 6px;
 }
 
+.section-1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.section-1 .left-part {
+  background-color: rgb(238, 238, 238);
+  padding: 0px 20px;
+  padding: 30px;
+}
+.section-1 .left-part h2 {
+  height: 25px;
+}
+.section-1 .left-part img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 25px;
+}
+.section-1 .left-part h3 {
+  text-transform: uppercase;
+}
+.section-1 .left-part p {
+  font-size: 0.9rem;
+}
+.section-1 .left-part #cooker {
+  border-radius: 100px;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  margin: 0;
+}
+.section-1 .left-part h4,
+.section-1 .left-part h5 {
+  font-family: roboto, arial;
+}
+.section-1 .left-part h5 {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: rgb(183, 183, 185);
+  margin-top: 3px;
+}
 .section-1 .right-part {
-  background: url(../../img/dish-gallery-06.webp);
+  background: url(../img/store-01.webp) center/cover;
+}
+
+.section-2 {
+  position: relative;
+  height: 83vh;
+  z-index: 6;
+}
+.section-2 .discover-container {
+  padding: 30px;
+}
+.section-2 .discover-container h2 {
+  height: 25px;
+}
+.section-2 .discover-container img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 25px;
+}
+.section-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+  font-family: roboto, arial;
+  color: rgb(230, 230, 230);
+}
+.section-2 ul li {
+  border-bottom: 1px solid rgb(183, 183, 185);
+  height: 25px;
+}
+.section-2 ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.section-2 .menu {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: rgb(238, 238, 238);
+  width: 60%;
+  margin: 10px 0;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  z-index: 2;
+}
+.section-2 .menu .dish {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 100px;
+  border-bottom: 1px solid rgba(192, 169, 155, 0.322);
+}
+.section-2 .menu .price {
+  color: rgb(160, 123, 90);
+  font-family: roboto, arial;
+  font-weight: 600;
+  padding-left: 10px;
+}
+.section-2 .menu img {
+  border-radius: 100px;
+  height: 80px;
+  margin: 20px;
+}
+.section-2 .menu .text {
+  text-align: left;
+  width: 100%;
+}
+.section-2 .menu .text .title-dish {
+  text-transform: uppercase;
+  font-family: roboto, arial;
+  font-size: 0.8rem;
+}
+.section-2 .menu .text .ingredients {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+.section-2 .img-back {
+  position: absolute;
+  bottom: 0;
+  height: 500px;
+  width: 100%;
+  background: url(../img/bg-menu-01.webp) center/cover;
+  z-index: 1;
+}
+
+.section-3 .grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  width: 75%;
+  margin: 50px auto;
+}
+.section-3 .grid-container .left-part {
+  background-color: rgb(0, 0, 0);
+}
+.section-3 .grid-container .left-part .left-part-container {
+  border: 1px dashed rgb(238, 238, 238);
+  margin: 20px;
+}
+.section-3 .grid-container .left-part .litle-header {
+  margin-top: 30px;
+}
+.section-3 .grid-container .left-part .litle-header h2 {
+  font-size: 1.9rem;
+  height: 25px;
+}
+.section-3 .grid-container .left-part .litle-header h3 {
+  color: rgb(230, 230, 230);
+  text-transform: uppercase;
+}
+.section-3 .grid-container .left-part .litle-header img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 15px;
+}
+.section-3 .grid-container .right-part {
+  background-color: rgb(238, 238, 238);
+}
+
+.section-4 .litle-header {
+  padding: 30px;
+}
+.section-4 .litle-header h2 {
+  height: 25px;
+}
+.section-4 .litle-header img {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  margin: 25px;
 }/*# sourceMappingURL=index.css.map */

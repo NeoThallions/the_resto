@@ -62,7 +62,7 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam accusantium voluptatem, itaque
                     perspiciatis porro veritatis facere et laboriosam unde odit animi rerum distinctio facilis,
                     explicabo inventore eos, libero quia nihil?</p>
-                <img src="./assets/img/avatar-01.webp" alt="Photo Russell">
+                <img src="./assets/img/avatar-01.webp" id="cooker" alt="Photo Russell">
                 <h4>Russell Stephens</h4>
                 <h5>chef cook</h5>
             </div>
@@ -83,11 +83,11 @@
                 </ul>
             </div>
             <div class="menu">
-                <div class="dish-1">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-01.webp" alt="dish-1">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">italian source mushroom</h6>
                         <p class="ingredients">mushroom / garlic / veggies</p>
                     </span>
@@ -95,11 +95,11 @@
                         <p class="price">$12</p>
                     </span>
                 </div>
-                <div class="dish-2">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-02.webp" alt="dish-2">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">fried potatoes with garlic</h6>
                         <p class="ingredients">potatoes/ olive oil / garlic </p>
                     </span>
@@ -107,11 +107,11 @@
                         <p class="price">$22</p>
                     </span>
                 </div>
-                <div class="dish-3">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-03.webp" alt="dish-3">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">tenu roast source</h6>
                         <p class="ingredients">Tuna / potatoes / rice</p>
                     </span>
@@ -119,11 +119,11 @@
                         <p class="price">$15</p>
                     </span>
                 </div>
-                <div class="dish-4">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-04.webp" alt="dish-4">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">roast pork (4 sticks)</h6>
                         <p class="ingredients">pork / veggies / shoyu</p>
                     </span>
@@ -131,11 +131,11 @@
                         <p class="price">$18</p>
                     </span>
                 </div>
-                <div class="dish-5">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-05.webp" alt="dish-5">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">salted fried chicken</h6>
                         <p class="ingredients">chicken / olive oil / salt</p>
                     </span>
@@ -143,11 +143,11 @@
                         <p class="price">$20</p>
                     </span>
                 </div>
-                <div class="dish-6">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-06.webp" alt="dish-6">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">crab with curry sources</h6>
                         <p class="ingredients">crab / potatoes / rice</p>
                     </span>
@@ -155,11 +155,11 @@
                         <p class="price">$14</p>
                     </span>
                 </div>
-                <div class="dish-7">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-07.webp" alt="dish-7">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">imported salmon steak</h6>
                         <p class="ingredients">salmon / veggies / oil</p>
                     </span>
@@ -167,11 +167,11 @@
                         <p class="price">$16</p>
                     </span>
                 </div>
-                <div class="dish-8">
+                <div class="dish">
                     <span>
                         <img src="./assets/img/dish-item-08.webp" alt="dish-8">
                     </span>
-                    <span>
+                    <span class="text">
                         <h6 class="title-dish">baked potato pizza</h6>
                         <p class="ingredients">potato / bread / cheese</p>
                     </span>
@@ -180,45 +180,50 @@
                     </span>
                 </div>
             </div>
+            <div class="img-back">
+            </div>
         </div>
         <div class="section-3">
-            <div class="left-part">
-                <div class="left-part-container">
+            <div class="grid-container">
+
+                <div class="left-part">
+                    <div class="left-part-container">
+                        <div class="litle-header">
+                            <h2>Time</h2>
+                            <h3>open</h3>
+                            <img src="./assets/img/ic-plate-big.png" alt="couverts">
+                        </div>
+                        <div class="days-hours">
+                            <h2 class="day">monday - friday</h2>
+                            <p>7AM - 11AM (Breakfast)</p>
+                            <p>11AM - 10PM (Lunch/Dinner)</p>
+                        </div>
+                        <div class="days-hours">
+                            <h2 class="day">saturday - sunday</h2>
+                            <p>8AM-1PM (Brunch)</p>
+                            <p>1PM - 9PM (Lunch/Dinner)</p>
+                        </div>
+                        <div class="days-hours">
+                            <h2 class="day">+ 15 890 979 25 52</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-part">
                     <div class="litle-header">
-                        <h2>Time</h2>
-                        <h3>open</h3>
+                        <h2>Reservation</h2>
+                        <h3>online booking</h3>
                         <img src="./assets/img/ic-plate-big.png" alt="couverts">
                     </div>
-                    <div class="days-hours">
-                        <h2 class="day">monday - friday</h2>
-                        <p>7AM - 11AM (Breakfast)</p>
-                        <p>11AM - 10PM (Lunch/Dinner)</p>
-                    </div>
-                    <div class="days-hours">
-                        <h2 class="day">saturday - sunday</h2>
-                        <p>8AM-1PM (Brunch)</p>
-                        <p>1PM - 9PM (Lunch/Dinner)</p>
-                    </div>
-                    <div class="days-hours">
-                        <h2 class="day">+ 15 890 979 25 52</h2>
-                    </div>
+                    <form action="">
+                        <input type="number" min="1" placeholder="People">
+                        <input type="date" placeholder="date">
+                        <input type="hour" placeholder="horaire">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Email">
+                        <input type="submit" id="btn" value="book now">
+                    </form>
                 </div>
-            </div>
-            <div class="right-part">
-                <div class="litle-header">
-                    <h2>Reservation</h2>
-                    <h3>online booking</h3>
-                    <img src="./assets/img/ic-plate-big.png" alt="couverts">
-                </div>
-                <form action="">
-                    <input type="number" min="1" placeholder="People">
-                    <input type="date" placeholder="date">
-                    <input type="hour" placeholder="horaire">
-                    <input type="text" placeholder="Name">
-                    <input type="text" placeholder="Phone">
-                    <input type="text" placeholder="Email">
-                    <input type="submit" id="btn" value="book now">
-                </form>
             </div>
         </div>
         <div class="section-4">
