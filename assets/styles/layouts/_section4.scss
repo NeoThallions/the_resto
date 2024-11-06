@@ -1,5 +1,65 @@
 .section-4 {
+    margin-bottom: 70px;
+
     .litle-header {
         @include litle-head
     }
+
+    h3 {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        color: $white-text;
+        padding: 7px;
+    }
+
+    img {
+        margin: 30px;
+        height: 40px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .left-part {
+        display: grid;
+        gap: 20px;
+
+        .horizon-bloc {
+            display: grid;
+            grid-template-columns: 30% 70%;
+
+            .text {
+                text-align-last: left;
+                @include text-event
+            }
+        }
+
+        .img-1 {
+            background: url(../img/event-01.webp)center/cover;
+        }
+
+        .img-2 {
+            background: url(../img/event-02.webp)center/cover;
+        }
+    }
+
+    .right-part {
+        background: url(../img/event-03.webp)center/cover;
+        margin: 20px;
+
+        .container {
+
+            @include text-event;
+            margin: 20px;
+        }
+    }
+
+
+
+
 }
