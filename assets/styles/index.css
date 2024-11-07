@@ -64,6 +64,87 @@ a:visited {
   color: unset;
 }
 
+footer {
+  position: relative;
+  background: url(../img/bg-footer.webp) center/cover;
+}
+footer .grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 40px;
+  width: 70%;
+  margin: 0 auto;
+}
+footer .grid-container .left-part {
+  text-align: left;
+  padding-right: 30px;
+}
+footer .grid-container .left-part h3 {
+  font-family: allura, arial;
+  font-weight: 100;
+  color: rgb(197, 149, 108);
+  text-transform: capitalize;
+  height: 35px;
+  font-size: 2.5rem;
+}
+footer .grid-container .left-part p {
+  color: rgb(230, 230, 230);
+  font-size: 0.8rem;
+  line-height: 25px;
+  margin-top: 30px;
+}
+footer .grid-container .right-part {
+  text-align: left;
+  padding-left: 50px;
+}
+footer .grid-container .right-part h5 {
+  color: rgb(238, 238, 238);
+  text-transform: uppercase;
+  font-family: roboto, arial;
+  margin: 10px 0;
+}
+footer .grid-container .right-part input {
+  background-color: rgb(33, 33, 30);
+  height: 30px;
+  width: 220px;
+  padding: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.226);
+  margin-bottom: 40px;
+}
+footer .grid-container .right-part .network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .grid-container .right-part ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .grid-container .right-part li {
+  font-size: 0.8rem;
+  color: rgba(128, 128, 128, 0.575);
+}
+footer::after {
+  content: "by Thallions";
+  font-family: allura, arial;
+  font-size: 1.3rem;
+  color: rgb(197, 149, 108);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 header {
   z-index: 0;
   background: url(../img/bg-slider-06.webp) center/cover;
@@ -162,8 +243,7 @@ header .header-content p {
   text-transform: uppercase;
 }
 .section-1 .left-part img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  height: 30px;
   margin: 25px;
 }
 .section-1 .left-part h3 {
@@ -174,9 +254,11 @@ header .header-content p {
 }
 .section-1 .left-part #cooker {
   border-radius: 100px;
-  -webkit-transform: scale(0.6);
-          transform: scale(0.6);
+  height: 80px;
   margin: 0;
+}
+.section-1 .left-part h4 {
+  letter-spacing: 1px;
 }
 .section-1 .left-part h4,
 .section-1 .left-part h5 {
@@ -194,8 +276,8 @@ header .header-content p {
 
 .section-2 {
   position: relative;
+  z-index: 100;
   height: 83vh;
-  z-index: 6;
 }
 .section-2 .discover-container {
   padding: 30px;
@@ -208,8 +290,7 @@ header .header-content p {
   text-transform: uppercase;
 }
 .section-2 .discover-container img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  height: 30px;
   margin: 25px;
 }
 .section-2 ul {
@@ -237,6 +318,7 @@ header .header-content p {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  z-index: 2;
   background: rgb(238, 238, 238);
   width: 60%;
   margin: 10px 0;
@@ -244,7 +326,6 @@ header .header-content p {
   display: grid;
   grid-template-columns: 50% 50%;
   gap: 20px;
-  z-index: 2;
 }
 .section-2 .menu .dish {
   display: -webkit-box;
@@ -286,11 +367,11 @@ header .header-content p {
 }
 .section-2 .img-back {
   position: absolute;
+  z-index: 1;
   bottom: 0;
   height: 500px;
   width: 100%;
   background: url(../img/bg-menu-01.webp) center/cover;
-  z-index: 1;
 }
 
 .section-3 .grid-container {
@@ -351,8 +432,7 @@ header .header-content p {
   text-transform: uppercase;
 }
 .section-3 .grid-container .right-part img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  height: 30px;
   margin: 25px;
 }
 .section-3 .grid-container .right-part .litle-header {
@@ -364,7 +444,6 @@ header .header-content p {
 }
 .section-3 .grid-container .right-part img {
   margin: 30px;
-  height: 40px;
 }
 .section-3 .grid-container .right-part form {
   display: grid;
@@ -403,7 +482,7 @@ header .header-content p {
 }
 
 .section-4 {
-  margin-bottom: 70px;
+  margin-bottom: 150px;
 }
 .section-4 .litle-header {
   padding: 30px;
@@ -416,8 +495,7 @@ header .header-content p {
   text-transform: uppercase;
 }
 .section-4 .litle-header img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  height: 30px;
   margin: 25px;
 }
 .section-4 h3 {
@@ -433,75 +511,206 @@ header .header-content p {
 .section-4 .grid-container {
   display: grid;
   grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr 1fr;
   width: 70%;
   margin: 0 auto;
+  grid-template-areas: "hb1 rp" "hb2 rp";
+  row-gap: 20px;
 }
-.section-4 .left-part {
-  display: grid;
-  gap: 20px;
-}
-.section-4 .left-part .horizon-bloc {
+.section-4 .grid-container .horizon-bloc {
   display: grid;
   grid-template-columns: 30% 70%;
+  margin-right: 20px;
 }
-.section-4 .left-part .horizon-bloc .text {
+.section-4 .grid-container .horizon-bloc .text {
+  display: grid;
+  background-color: rgb(238, 238, 238);
+  padding: 20px;
   -moz-text-align-last: left;
        text-align-last: left;
-  background-color: rgb(238, 238, 238);
-  padding: 20px;
 }
-.section-4 .left-part .horizon-bloc .text h4 {
+.section-4 .grid-container .horizon-bloc .text h4 {
   font-family: roboto, arial;
   text-transform: capitalize;
   letter-spacing: 1px;
   font-size: 1.1rem;
   font-weight: 100;
 }
-.section-4 .left-part .horizon-bloc .text p {
+.section-4 .grid-container .horizon-bloc .text p {
   font-family: roboto, arial;
   text-transform: capitalize;
   color: rgba(128, 128, 128, 0.562);
   font-size: 0.8rem;
   margin: 20px 0;
 }
-.section-4 .left-part .horizon-bloc .text button {
+.section-4 .grid-container .horizon-bloc .text button {
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.7rem;
 }
-.section-4 .left-part .img-1 {
+.section-4 .grid-container .horizon-bloc .text button:hover {
+  cursor: pointer;
+  color: rgb(173, 135, 101);
+}
+.section-4 .grid-container #img-1 {
   background: url(../img/event-01.webp) center/cover;
 }
-.section-4 .left-part .img-2 {
+.section-4 .grid-container #img-2 {
   background: url(../img/event-02.webp) center/cover;
 }
-.section-4 .right-part {
-  background: url(../img/event-03.webp) center/cover;
-  margin: 20px;
+.section-4 .grid-container .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.section-4 .right-part .container {
+.section-4 .grid-container .date {
+  background-color: rgb(33, 33, 30);
+  margin: 0 auto;
+  height: 70px;
+  width: 70px;
+  color: rgb(230, 230, 230);
+}
+.section-4 .grid-container .date h3 {
+  font-family: roboto, arial;
+  font-size: 1.5rem;
+  padding: 0;
+  margin-top: 10px;
+}
+.section-4 .grid-container .right-part {
+  background: url(../img/event-03.webp) center/cover;
+}
+.section-4 .grid-container .right-part .container {
   background-color: rgb(238, 238, 238);
   padding: 20px;
+  height: 276px;
   margin: 20px;
+  padding-top: 0;
 }
-.section-4 .right-part .container h4 {
+.section-4 .grid-container .right-part .container h4 {
   font-family: roboto, arial;
   text-transform: capitalize;
   letter-spacing: 1px;
   font-size: 1.1rem;
   font-weight: 100;
 }
-.section-4 .right-part .container p {
+.section-4 .grid-container .right-part .container p {
   font-family: roboto, arial;
   text-transform: capitalize;
   color: rgba(128, 128, 128, 0.562);
   font-size: 0.8rem;
   margin: 20px 0;
 }
-.section-4 .right-part .container button {
+.section-4 .grid-container .right-part .container button {
   border: none;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 0.7rem;
+}
+.section-4 .grid-container .right-part .container button:hover {
+  cursor: pointer;
+  color: rgb(173, 135, 101);
+}
+.section-4 .grid-container .right-part .container .date {
+  margin-bottom: 30px;
+}
+.section-4 .grid-container .right-part .container .date h3 {
+  padding-top: 10px;
+  margin: 0;
+}
+.section-4 .grid-container .right-part .container .date p {
+  font-family: roboto, arial;
+  color: rgb(230, 230, 230);
+  margin: 0;
+}
+.section-4 .grid-container .right-part .container button {
+  margin-top: 30px;
+}
+.section-4 .grid-container #bloc-1 {
+  grid-area: hb1;
+}
+.section-4 .grid-container #bloc-2 {
+  grid-area: hb2;
+}
+.section-4 .grid-container #bloc-3 {
+  grid-area: rp;
+}
+
+.section-5 {
+  height: 50vh;
+  position: relative;
+  z-index: 1;
+}
+.section-5 #cooker {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  top: -40px;
+  border-radius: 100px;
+  height: 80px;
+  margin: 0;
+}
+.section-5 .text {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgb(238, 238, 238);
+  padding: 60px;
+  font-family: roboto, arial;
+}
+.section-5 .text p {
+  position: relative;
+  font-size: 0.9rem;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.section-5 .text p i {
+  position: absolute;
+  font-size: 0.7rem;
+}
+.section-5 .text p #left {
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+.section-5 .text p #right {
+  -webkit-transform: translateX(7px);
+          transform: translateX(7px);
+}
+.section-5 .text h4 {
+  font-family: roboto, arial;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin-bottom: 20px;
+}
+.section-5 .text h4,
+.section-5 .text h5 {
+  text-transform: capitalize;
+  font-family: roboto, arial;
+}
+.section-5 .text h5 {
+  font-size: 0.8rem;
+  color: rgb(183, 183, 185);
+  margin-top: 3px;
+}
+.section-5 .map {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+  bottom: 0;
+  background: url(../img/gmap.webp) center/cover;
+  width: 100%;
+  height: 300px;
 }/*# sourceMappingURL=index.css.map */

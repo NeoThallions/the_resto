@@ -18,9 +18,12 @@
         }
 
         #cooker {
-            border-radius: 100px;
-            transform: scale(0.6);
-            margin: 0;
+            @include cooker;
+
+        }
+
+        h4 {
+            letter-spacing: 1px;
         }
 
         h4,

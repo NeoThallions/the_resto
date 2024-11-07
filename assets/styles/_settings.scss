@@ -48,9 +48,21 @@ $line: rgba(43, 30, 23, 0.233);
     }
 
     img {
-        transform: scale(0.7);
+        height: 30px;
         margin: 25px;
     }
+}
+
+@mixin position-absolute-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin cooker {
+    border-radius: 100px;
+    height: 80px;
+    margin: 0;
 }
 
 @mixin text-event {
@@ -79,6 +91,11 @@ $line: rgba(43, 30, 23, 0.233);
         text-transform: uppercase;
         letter-spacing: 1px;
         font-size: 0.7rem;
+    }
+
+    button:hover {
+        cursor: pointer;
+        color: $brown-text;
     }
 }
 
