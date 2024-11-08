@@ -68,6 +68,18 @@ footer {
             li {
                 font-size: 0.8rem;
                 color: rgba(128, 128, 128, 0.575);
+
+                i {
+                    margin: 3px;
+                    // pour éviter que les icones se décalent lors d'un hover on met une width sur les icones.
+                    width: 15px;
+                }
+
+                i:hover {
+                    cursor: pointer;
+                    font-size: 1rem;
+                    color: rgba(168, 168, 168, 0.575);
+                }
             }
         }
     }
