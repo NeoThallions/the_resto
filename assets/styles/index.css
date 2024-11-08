@@ -192,15 +192,12 @@ header nav li a {
   width: 15px;
   height: 15px;
 }
-header nav li i {
-  width: 15px;
-}
 header nav li i:hover {
   cursor: pointer;
   font-size: 1rem;
   color: rgba(168, 168, 168, 0.87);
 }
-header nav .ul-nav {
+header nav li .ul-nav {
   width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -210,7 +207,7 @@ header nav .ul-nav {
   font-family: roboto, arial;
   font-size: 0.7rem;
 }
-header nav .network {
+header nav li .network {
   width: 9%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
