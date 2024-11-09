@@ -26,6 +26,7 @@ body {
   font-family: poppins, arial;
   max-width: 1515px;
   min-height: 100vh;
+  min-width: 340px;
 }
 
 html {
@@ -161,23 +162,30 @@ header {
   width: 100%;
 }
 header nav {
-  height: 70px;
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  height: 70px;
+  width: 80%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
 }
+@media screen and (max-width: 920px) {
+  header nav {
+    width: 50%;
+  }
+}
 header nav h2 {
   margin: 0 10px;
   color: rgb(230, 230, 230);
   font-weight: 600;
+}
+@media screen and (max-width: 920px) {
+  header nav h2 {
+    width: 50%;
+  }
 }
 header nav ul {
   display: -webkit-box;
@@ -188,16 +196,16 @@ header nav ul {
 header nav li {
   padding: 10px;
 }
-header nav li a {
+header nav a {
   width: 15px;
   height: 15px;
 }
-header nav li i:hover {
+header nav i:hover {
   cursor: pointer;
   font-size: 1rem;
   color: rgba(168, 168, 168, 0.87);
 }
-header nav li .ul-nav {
+header nav .ul-nav {
   width: 80%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -207,12 +215,27 @@ header nav li .ul-nav {
   font-family: roboto, arial;
   font-size: 0.7rem;
 }
-header nav li .network {
-  width: 9%;
+@media screen and (max-width: 920px) {
+  header nav .ul-nav {
+    display: none;
+  }
+}
+header nav .network {
+  width: 122px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 0.8rem;
+}
+@media screen and (max-width: 920px) {
+  header nav .network {
+    width: 50%;
+    min-width: 122px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 auto;
+  }
 }
 header .header-content {
   margin-top: 220px;
@@ -240,58 +263,83 @@ header .header-content p {
   letter-spacing: 6px;
 }
 
-.section-1 {
+.section-1 .part-container {
   display: grid;
   grid-template-columns: 50% 50%;
-}
-.section-1 .left-part {
   background-color: rgb(238, 238, 238);
-  padding: 0px 20px;
+}
+@media screen and (max-width: 700px) {
+  .section-1 .part-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.section-1 .part-container .left-part {
+  background-color: rgb(238, 238, 238);
+  padding: 0 20px;
   padding: 30px;
 }
-.section-1 .left-part h2 {
+@media screen and (max-width: 700px) {
+  .section-1 .part-container .left-part {
+    border: 1px dashed rgb(197, 149, 108);
+    margin: 20px;
+  }
+}
+.section-1 .part-container .left-part h2 {
   height: 35px;
   font-size: 2.5rem;
 }
-.section-1 .left-part h3 {
+.section-1 .part-container .left-part h3 {
   text-transform: uppercase;
 }
-.section-1 .left-part img {
+.section-1 .part-container .left-part img {
   height: 30px;
   margin: 25px;
 }
-.section-1 .left-part h3 {
+.section-1 .part-container .left-part h3 {
   text-transform: uppercase;
 }
-.section-1 .left-part p {
+.section-1 .part-container .left-part p {
   font-size: 0.9rem;
+  margin-bottom: 30px;
 }
-.section-1 .left-part #cooker {
+.section-1 .part-container .left-part #cooker {
   border-radius: 100px;
   height: 80px;
   margin: 0;
 }
-.section-1 .left-part h4 {
+.section-1 .part-container .left-part h4 {
   letter-spacing: 1px;
 }
-.section-1 .left-part h4,
-.section-1 .left-part h5 {
+.section-1 .part-container .left-part h4,
+.section-1 .part-container .left-part h5 {
   font-family: roboto, arial;
 }
-.section-1 .left-part h5 {
+.section-1 .part-container .left-part h5 {
   text-transform: uppercase;
   font-size: 0.7rem;
   color: rgb(183, 183, 185);
   margin-top: 3px;
 }
-.section-1 .right-part {
+.section-1 .part-container .right-part {
   background: url(../img/store-01.webp) center/cover;
+}
+@media screen and (max-width: 700px) {
+  .section-1 .part-container .right-part {
+    display: none;
+  }
 }
 
 .section-2 {
   position: relative;
   z-index: 100;
-  height: 83vh;
+  height: 800px;
+}
+@media screen and (max-width: 920px) {
+  .section-2 {
+    height: 1140px;
+  }
 }
 .section-2 .discover-container {
   padding: 30px;
@@ -319,6 +367,17 @@ header .header-content p {
   font-family: roboto, arial;
   color: rgb(230, 230, 230);
 }
+@media screen and (max-width: 920px) {
+  .section-2 ul {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 570px) {
+  .section-2 ul {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}
 .section-2 ul li {
   border-bottom: 1px solid rgb(183, 183, 185);
   height: 25px;
@@ -332,14 +391,27 @@ header .header-content p {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  position: absolute;
+  bottom: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
   z-index: 2;
   background: rgb(238, 238, 238);
   width: 60%;
   margin: 10px 0;
   padding: 20px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 20px;
+}
+@media screen and (max-width: 920px) {
+  .section-2 .menu {
+    display: block;
+    border-top: 5px solid rgb(197, 149, 108);
+  }
+}
+@media screen and (max-width: 570px) {
+  .section-2 .menu {
+    width: 100%;
+  }
 }
 .section-2 .menu .dish {
   display: -webkit-box;
@@ -381,7 +453,7 @@ header .header-content p {
 }
 .section-2 .img-back {
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   bottom: 0;
   height: 500px;
   width: 100%;
@@ -393,6 +465,17 @@ header .header-content p {
   grid-template-columns: 30% 70%;
   width: 75%;
   margin: 70px auto;
+}
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 .section-3 .grid-container .left-part-container {
   background-color: rgb(0, 0, 0);
@@ -409,16 +492,32 @@ header .header-content p {
   height: 35px;
   font-size: 2.5rem;
 }
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .left-part-container .left-part .litle-header h2 {
+    font-size: 3rem;
+    height: 40px;
+  }
+}
 .section-3 .grid-container .left-part-container .left-part .litle-header h3 {
   color: rgb(230, 230, 230);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.2rem;
 }
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .left-part-container .left-part .litle-header h3 {
+    font-size: 1.5rem;
+    height: 40px;
+  }
+}
 .section-3 .grid-container .left-part-container .left-part .litle-header img {
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-  margin: 15px;
+  height: 30px;
+  margin: 25px;
+}
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .left-part-container .left-part .litle-header img {
+    height: 40px;
+  }
 }
 .section-3 .grid-container .left-part-container .left-part .days-hours h2 {
   font-family: poppins, arial;
@@ -426,9 +525,19 @@ header .header-content p {
   font-size: 1rem;
   margin: 30px 0 5px;
 }
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .left-part-container .left-part .days-hours h2 {
+    font-size: 1.2rem;
+  }
+}
 .section-3 .grid-container .left-part-container .left-part .days-hours p {
   color: rgb(230, 230, 230);
   font-size: 0.7rem;
+}
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .left-part-container .left-part .days-hours p {
+    font-size: 0.9rem;
+  }
 }
 .section-3 .grid-container .left-part-container .left-part .days-hours .numb {
   margin-bottom: 20px;
@@ -458,6 +567,11 @@ header .header-content p {
 }
 .section-3 .grid-container .right-part img {
   margin: 30px;
+}
+@media screen and (max-width: 1020px) {
+  .section-3 .grid-container .right-part img {
+    height: 40px;
+  }
 }
 .section-3 .grid-container .right-part form {
   display: grid;
@@ -512,15 +626,20 @@ header .header-content p {
   height: 30px;
   margin: 25px;
 }
-.section-4 h3 {
+.section-4 .litle-header h3 {
   font-size: 1.7rem;
   letter-spacing: 1px;
   color: rgb(230, 230, 230);
   padding: 7px;
 }
-.section-4 img {
+.section-4 .litle-header img {
   margin: 30px;
-  height: 40px;
+  height: 30px;
+}
+@media screen and (max-width: 1020px) {
+  .section-4 .litle-header img {
+    height: 40px;
+  }
 }
 .section-4 .grid-container {
   display: grid;

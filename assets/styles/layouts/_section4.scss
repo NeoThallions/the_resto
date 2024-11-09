@@ -2,19 +2,25 @@
     margin-bottom: 150px;
 
     .litle-header {
-        @include litle-head
-    }
+        @include litle-head;
 
-    h3 {
-        font-size: 1.7rem;
-        letter-spacing: 1px;
-        color: $white-text;
-        padding: 7px;
-    }
+        h3 {
+            font-size: 1.7rem;
+            letter-spacing: 1px;
+            color: $white-text;
+            padding: 7px;
+        }
 
-    img {
-        margin: 30px;
-        height: 40px;
+        img {
+            margin: 30px;
+            height: 30px;
+
+            @media screen and (max-width: 1020px) {
+                height: 40px;
+            }
+
+
+        }
     }
 
     .grid-container {
