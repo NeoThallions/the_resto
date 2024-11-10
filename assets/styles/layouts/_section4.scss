@@ -1,6 +1,10 @@
 .section-4 {
     margin-bottom: 150px;
 
+    @media screen and (max-width: 810px) {
+        display: none;
+    }
+
     .litle-header {
         @include litle-head;
 
@@ -83,12 +87,32 @@
 
             .container {
                 @include text-event;
-                height: 276px;
+                height: auto;
                 margin: 20px;
                 padding-top: 0;
 
+
+                .text {
+                    display: grid;
+                    @include text-event;
+                    text-align-last: left;
+
+                    @media screen and (max-width: 1000px) {
+                        margin: 0;
+
+                        button {
+                            margin: 0;
+                        }
+                    }
+                }
+
+
                 .date {
                     margin-bottom: 30px;
+
+                    @media screen and (max-width: 1000px) {
+                        margin: 0 auto;
+                    }
 
                     h3 {
                         padding-top: 10px;

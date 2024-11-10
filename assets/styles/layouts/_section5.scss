@@ -3,6 +3,18 @@
     position: relative;
     z-index: 1;
 
+    @media screen and (max-width: 810px) {
+        margin-top: 150px;
+    }
+
+    @media screen and (max-width: 560px) {
+        height: 600px;
+    }
+
+    @media screen and (max-width: 420px) {
+        height: 700px;
+    }
+
 
     #cooker {
         position: absolute;
