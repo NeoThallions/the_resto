@@ -39,6 +39,18 @@
         // si on fait 'gap:20px' les 20px verticaux vont se répercuter à droite et le bloc ne sera pas centré. Pour qu'il y ai tout de même une séparation entre les parties gauche et droite, on ajoute 'margin-right: 20px;' à '.horizon-bloc '.
         row-gap: 20px;
 
+        #bloc-1 {
+            grid-area: hb1;
+        }
+
+        #bloc-2 {
+            grid-area: hb2;
+        }
+
+        #bloc-3 {
+            grid-area: rp;
+        }
+
         .horizon-bloc {
             display: grid;
             grid-template-columns: 30% 70%;
@@ -132,16 +144,5 @@
             }
         }
 
-        #bloc-1 {
-            grid-area: hb1;
-        }
-
-        #bloc-2 {
-            grid-area: hb2;
-        }
-
-        #bloc-3 {
-            grid-area: rp;
-        }
     }
 }
